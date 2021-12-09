@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="292.0" prefWidth="600.0" style="-fx-background-color: B2B2B2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.ControllerCadastro">
+   <children>
+      <Button fx:id="btnCadastrar" layoutX="513.0" layoutY="245.0" mnemonicParsing="false" onAction="#salvar" style="-fx-background-color: #000000;" text="Cadastrar" textFill="#f5f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnVoltar" layoutX="20.0" layoutY="245.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="6.0" prefWidth="48.0" style="-fx-background-color: #000000;" text="Voltar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="txtDescricao" layoutX="20.0" layoutY="84.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #F2F2F2;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txtVarejo" layoutX="20.0" layoutY="124.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #F2F2F2;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="lblTitulo" layoutX="208.0" layoutY="30.0" text="Cadastrar Produto">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="67.0" text="Descrição:" AnchorPane.leftAnchor="20.0" />
+      <Label layoutX="20.0" layoutY="109.0" text="Varejo:" AnchorPane.leftAnchor="20.0" />
+      <Label layoutX="20.0" layoutY="149.0" text="Atacado:" AnchorPane.leftAnchor="20.0" />
+      <TextField fx:id="txtAtacado" layoutX="20.0" layoutY="166.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: F2F2F2;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txtEstoque" layoutX="20.0" layoutY="206.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: F2F2F2;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label layoutX="20.0" layoutY="191.0" text="Estoque:" AnchorPane.leftAnchor="20.0" />
+   </children>
+</AnchorPane>
